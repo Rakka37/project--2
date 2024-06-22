@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    .back {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .kotak {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 90%; /* Make sure the content does not overflow on small screens */
+    }
+
+    .portofolio img {
+        width: 100%;
+        max-width: 300px; /* Adjust the size of the image */
+        height: auto;
+        border: 2px solid #000;
+    }
+
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .portofolio img {
+            max-width: 100%; /* Ensure the image fits well on smaller screens */
+        }
+    }
+</style>
+
+<body>
+    <div class="back">
+        <a href="index.html"><img src="img/back.png" alt="back"></a>
+    </div>
+
+    <div class="kotak">
+        <h3>PORTOFOLIO</h3>
+        <div class="portofolio">
+            <img src="img/dasain-raka.png" alt="Portfolio Image">
+        </div>
+        <p>Keterangan portofolio ini...</p>
+    </div>    
+</body>
+</html>

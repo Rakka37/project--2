@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #b5e6ff;
+            border: 2px solid #000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h3 {
+            font-size: 1.375rem; /* 22px */
+        }
+
+        h2 {
+            font-size: 1.25rem; /* 20px */
+            align-self: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .skills-list {
+            width: 100%;
+            text-align: left;
+        }
+
+        .skills-list li {
+            font-size: 1.125rem; /* 18px */
+            padding: 5px 0;
+        }
+
+        .back {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            h3 {
+                font-size: 1.25rem; /* 20px */
+            }
+
+            h2 {
+                font-size: 1.125rem; /* 18px */
+            }
+
+            .skills-list li {
+                font-size: 1rem; /* 16px */
+                padding: 4px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="index.html"><img src="img/back.png" alt="back"></a>
+    </div>
+    <div class="container">
+        <h3>Skills</h3>
+        <h2>Soft Skills</h2>
+        <ul class="skills-list">
+            <li>Kemampuan manajemen waktu</li>
+            <li>Kemampuan menjalin relasi</li>
+            <li>Kemampuan Bahasa Indonesia</li>
+            <li>Kemampuan berorganisasi</li>
+            <li>Kemampuan bekerja sama dengan tim</li>
+            <li>Disiplin dan bertanggung jawab</li>
+        </ul>
+        <h2>Hard Skills</h2>
+        <ul class="skills-list">
+            <li>Operasional MS. Office</li>
+            <li>Bahasa Pemrograman (HTML, CSS, PHP)</li>
+            <li>Manajemen Basis Data (MySQL)</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+</head>
+
+ <!-- kode CSS -->
+ <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b5e6ff; /* Background color untuk seluruh halaman */
+    }
+
+    .cont {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #b5e6ff;
+    }
+
+    .form {
+        width: 90%;
+        max-width: 400px;
+        background-color: aquamarine;
+        padding: 20px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    label {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #00a80b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #007a05;
+    }
+
+    /* Media query untuk layar kecil */
+    @media (max-width: 600px) {
+        .form {
+            width: 95%;
+            padding: 15px;
+        }
+
+        label {
+            font-size: 0.9em;
+        }
+
+        input, textarea {
+            padding: 6px;
+        }
+
+        button {
+            padding: 8px;
+        }
+    }
+
+    .back {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+</style>
+
+<body>
+    <div class="back">
+        <a href="index.html"><img src="img/back.png" alt="back"></a>
+    </div>
+    
+    <div class="cont">
+        <div class="form">
+            <form action="#" method="post">
+                <label for="nama">Nama</label>
+                <input type="text" id="name" name="nama">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div> 
+    </div>
+</body>
+</html>
